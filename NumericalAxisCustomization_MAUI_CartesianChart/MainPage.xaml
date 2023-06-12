@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NumericalAxisCustomization_MAUI_CartesianChart.MainPage"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:local="clr-namespace:NumericalAxisCustomization_MAUI_CartesianChart">
+
+    <ContentPage.BindingContext>
+        <local:ViewModel />
+    </ContentPage.BindingContext>
+
+    <chart:SfCartesianChart Title="Number of Sales by Hour" Margin="10">
+
+        <chart:SfCartesianChart.XAxes>
+            <chart:NumericalAxis>
+                <chart:NumericalAxis.Title>
+                    <chart:ChartAxisTitle Text="Hours"/>
+                </chart:NumericalAxis.Title>
+            </chart:NumericalAxis>
+        </chart:SfCartesianChart.XAxes>
+
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis>
+                <chart:NumericalAxis.Title>
+                    <chart:ChartAxisTitle Text="Number of sales"/>
+                </chart:NumericalAxis.Title>
+            </chart:NumericalAxis>
+        </chart:SfCartesianChart.YAxes>
+
+        <chart:SfCartesianChart.Series>
+            <chart:ColumnSeries ItemsSource="{Binding Data}"
+                            XBindingPath="Hour"
+                            YBindingPath="Sales"
+                            ShowDataLabels="True"/>
+        </chart:SfCartesianChart.Series>
+
+    </chart:SfCartesianChart>
+
+</ContentPage>
