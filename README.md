@@ -7,6 +7,15 @@ Watch the video: Coming soon...
 
 Documentation: https://help.syncfusion.com/maui/cartesian-charts/axis/types#numerical-axis
 
+## Customizing the Range
+Maximum and Minimum properties of axis is used for setting the maximum and minimum value of the axis range respectively.
+
+```
+<chart:SfCartesianChart.YAxes>
+    <chart:NumericalAxis Maximum="2750" Minimum="250" Interval="250"/>
+</chart:SfCartesianChart.YAxes>
+```
+
 ## <a name="requirements-to-run-the-demo"></a>Requirements to run the demo ##
 
 To run the sample demo, refer to [System Requirements for .NET MAUI.](https://help.syncfusion.com/maui/system-requirements)
