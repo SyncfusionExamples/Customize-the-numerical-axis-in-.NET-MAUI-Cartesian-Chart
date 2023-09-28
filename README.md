@@ -12,9 +12,12 @@ Maximum and Minimum properties of axis is used for setting the maximum and minim
 
 ```
 <chart:SfCartesianChart.YAxes>
-    <chart:NumericalAxis Maximum="2750" Minimum="250" Interval="250"/>
+    <chart:NumericalAxis Maximum="200" Minimum="20" Interval="20"/>
 </chart:SfCartesianChart.YAxes>
 ```
+
+![image](https://github.com/SuryaKaran2143/Customize-the-numerical-axis-in-.NET-MAUI-Cartesian-Chart/assets/113962276/c7c08972-4c36-4d8d-b332-40c02adb4216)
+
 
 ## <a name="requirements-to-run-the-demo"></a>Requirements to run the demo ##
 
